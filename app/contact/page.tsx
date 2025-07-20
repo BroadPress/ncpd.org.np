@@ -46,9 +46,9 @@ const ContactPage: React.FC = () => {
           <div className="space-y-12">
             {/* Newsletter Section */}
             <div className="bg-white p-8 rounded-2xl border border-blue-100">
-              <h3 className="text-2xl font-bold mb-2">Subscribe to Our Newsletter</h3>
+              <h3 className="text-2xl font-bold mb-2">Subscribe to Our Organization</h3>
               <p className="text-gray-600 mb-4">
-                Stay up-to-date with our latest updates and news.
+                Stay up-to-date with our latest updates.
               </p>
               <div className="relative max-w-md">
                 <input
