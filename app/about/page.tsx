@@ -92,11 +92,13 @@ const AboutPage = () => {
         </nav>
       </header>
 
+      {/* Logo Section - Consistent py-6 spacing */}
       <motion.div initial="hidden" whileInView="visible" variants={fadeUp} className="w-full flex justify-center py-6">
         <img src="/about/ncpd-logo.png" alt="NCPD Highlight" className="w-1/2 h-auto object-contain rounded-xl" />
       </motion.div>
 
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-12 space-y-10 text-gray-800 leading-relaxed">
+      {/* Main Content Section - Consistent py-6 spacing */}
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6 space-y-6 text-gray-800 leading-relaxed">
         {[
           "NCPD is an organization dedicated to creating an enabling environment and opportunities for capacity building, networking, and collaboration whereby philanthropy and civil society organizations will grow.",
           "It conducts research, training, conferences, seminars, and workshops related to philanthropy, civil society organizations, fundraising, and communication. It also provides technical support in developing strategic plans and facilitates dialogue to make philanthropy and civil society organizations more efficient and effective. Importantly, it advocates for favorable policies and infrastructure that foster philanthropy in Nepal.",
@@ -104,60 +106,64 @@ const AboutPage = () => {
         ].map((text, index) => (
           <motion.p key={index} className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 text-base sm:text-lg text-gray-800 leading-relaxed" initial="hidden" animate="visible" custom={1} variants={fadeUp}>{text}</motion.p>
         ))}
+      </main>
 
-        <motion.section className="py-12" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={3}>
-          <div className="flex justify-center mb-8">
-            <div className="bg-white rounded-xl p-1 border border-gray-200">
-              {(['vision', 'mission', 'goal'] as const).map((tab) => (
-                <button
-                  key={tab}
-                  onClick={() => setActiveTab(tab)}
-                  className={`px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 ${
-                    activeTab === tab
-                      ? 'bg-blue-600 text-white'
-                      : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'
-                  }`}
-                >
-                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
-                </button>
-              ))}
-            </div>
+      {/* Vision/Mission/Goal Section - Consistent py-6 spacing */}
+      <motion.section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={3}>
+        <div className="flex justify-center mb-6">
+          <div className="bg-white rounded-xl p-1 border border-gray-200">
+            {(['vision', 'mission', 'goal'] as const).map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 ${
+                  activeTab === tab
+                    ? 'bg-blue-600 text-white'
+                    : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'
+                }`}
+              >
+                {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              </button>
+            ))}
           </div>
+        </div>
 
-          <motion.div
-            key={activeTab}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-6"
-          >
-            {activeTab === 'mission' ? (
-              <>
-                <div>
-                  <h2 className="text-2xl font-semibold text-blue-800 mb-4">{tabContent[activeTab].title}</h2>
-                  <p className="text-gray-700 leading-relaxed">{tabContent[activeTab].text}</p>
-                </div>
-                <div className="w-full h-full">
-                  <img src={tabContent[activeTab].image} alt={tabContent[activeTab].alt} className="w-full h-auto rounded-xl object-cover" />
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="w-full h-full">
-                  <img src={tabContent[activeTab].image} alt={tabContent[activeTab].alt} className="w-full h-auto rounded-xl object-cover" />
-                </div>
-                <div>
-                  <h2 className="text-2xl font-semibold text-blue-800 mb-4">{tabContent[activeTab].title}</h2>
-                  <p className="text-gray-700 leading-relaxed">{tabContent[activeTab].text}</p>
-                </div>
-              </>
-            )}
-          </motion.div>
-        </motion.section>
+        <motion.div
+          key={activeTab}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center p-4"
+        >
+          {activeTab === 'mission' ? (
+            <>
+              <div>
+                <h2 className="text-2xl font-semibold text-blue-800 mb-3">{tabContent[activeTab].title}</h2>
+                <p className="text-gray-700 leading-relaxed">{tabContent[activeTab].text}</p>
+              </div>
+              <div className="w-full h-full">
+                <img src={tabContent[activeTab].image} alt={tabContent[activeTab].alt} className="w-full h-auto rounded-xl object-cover" />
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="w-full h-full">
+                <img src={tabContent[activeTab].image} alt={tabContent[activeTab].alt} className="w-full h-auto rounded-xl object-cover" />
+              </div>
+              <div>
+                <h2 className="text-2xl font-semibold text-blue-800 mb-3">{tabContent[activeTab].title}</h2>
+                <p className="text-gray-700 leading-relaxed">{tabContent[activeTab].text}</p>
+              </div>
+            </>
+          )}
+        </motion.div>
+      </motion.section>
 
-        <motion.section className="bg-white rounded-2xl p-8 sm:p-10 space-y-6" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={6}>
-          <h2 className="text-3xl text-center font-bold text-blue-800 mb-6 tracking-tight">Objectives</h2>
-          <ul className="space-y-5 text-gray-700 text-base leading-relaxed">
+      {/* Objectives Section - Consistent py-6 spacing */}
+      <motion.section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={6}>
+        <div className="bg-white rounded-2xl p-6 sm:p-8 space-y-4">
+          <h2 className="text-3xl text-center font-bold text-blue-800 mb-4 tracking-tight">Objectives</h2>
+          <ul className="space-y-3 text-gray-700 text-base leading-relaxed">
             {[
               "Conduct and organize research, training, conferences, seminars, and workshops related to philanthropy, fundraising, communication, and branding.",
               "Conduct dialogue for enabling environments where philanthropy can thrive.",
@@ -173,11 +179,14 @@ const AboutPage = () => {
               </li>
             ))}
           </ul>
-        </motion.section>
+        </div>
+      </motion.section>
 
-        <motion.section className="bg-white rounded-2xl p-8 sm:p-10 space-y-6" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={7}>
-          <h2 className="text-3xl text-center font-bold text-blue-800 mb-6 tracking-tight">Core Values</h2>
-          <ul className="space-y-5 text-gray-700 text-base leading-relaxed">
+      {/* Core Values Section - Consistent py-6 spacing */}
+      <motion.section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={7}>
+        <div className="bg-white rounded-2xl p-6 sm:p-8 space-y-4">
+          <h2 className="text-3xl text-center font-bold text-blue-800 mb-4 tracking-tight">Core Values</h2>
+          <ul className="space-y-3 text-gray-700 text-base leading-relaxed">
             {[
               "Integrity: We are committed to honesty and sincere adherence to the highest professional, moral, and ethical standards.",
               "Impact: We believe that philanthropic efforts should support and enhance meaningful work that serves the public good in ways that, whenever possible, are measurable and sustainable.",
@@ -191,29 +200,31 @@ const AboutPage = () => {
               </li>
             ))}
           </ul>
-        </motion.section>
+        </div>
+      </motion.section>
 
-        <motion.section className="py-12" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <h2 className="text-3xl font-bold text-center text-blue-900 mb-8">Our Team</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <motion.div key={index} className="bg-white rounded-2xl p-6 text-center transition-all duration-300">
-                <img src={member.image} alt={member.name} className="w-32 h-32 mx-auto rounded-full object-cover mb-4" />
-                <h3 className="text-xl font-semibold text-blue-800 mb-2">{member.name}</h3>
-                <p className="text-sm text-gray-600 mb-4">{member.title}</p>
-                <button 
-                  onClick={() => openModal(member)}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
-                >
-                  Full Bio
-                </button>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-      </main>
+      {/* Team Section - Consistent py-6 spacing */}
+      <motion.section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+        <h2 className="text-3xl font-bold text-center text-blue-900 mb-6">Our Team</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {team.map((member, index) => (
+            <motion.div key={index} className="bg-white rounded-2xl p-6 text-center transition-all duration-300">
+              <img src={member.image} alt={member.name} className="w-32 h-32 mx-auto rounded-full object-cover mb-4" />
+              <h3 className="text-xl font-semibold text-blue-800 mb-2">{member.name}</h3>
+              <p className="text-sm text-gray-600 mb-4">{member.title}</p>
+              <button 
+                onClick={() => openModal(member)}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
+              >
+                Full Bio
+              </button>
+            </motion.div>
+          ))}
+        </div>
+      </motion.section>
 
-      <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="px-0">
+      {/* Logo Section - Consistent py-6 spacing */}
+      <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="py-6">
         <LogoSection />
       </motion.div>
 
