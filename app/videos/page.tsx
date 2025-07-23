@@ -117,9 +117,9 @@ const VideoCard: React.FC<{ video: Video }> = ({ video }) => {
 
 const VideoGalleryPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50 font-inter antialiased flex flex-col pt-40">
+    <div className="min-h-screen bg-gray-50 font-inter antialiased">
       {/* Header */}
-      <header className="px-4 sm:px-8 lg:px-20 pb-10">
+      <header className="px-4 sm:px-8 lg:px-20 pb-10 pt-40">
         <div className="text-center">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-black mb-2">
             Videos
@@ -132,8 +132,8 @@ const VideoGalleryPage: React.FC = () => {
         </div>
       </header>
 
-      {/* Fixed Alignment Layout */}
-      <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-24 py-10">
+      {/* Video Content */}
+      <main className="container mx-auto px-4 sm:px-6 lg:px-24 py-10">
         <div className="flex flex-col md:flex-row gap-10 justify-center items-stretch">
           {/* Left video */}
           <div className="flex justify-center w-full md:w-1/3">
@@ -152,12 +152,12 @@ const VideoGalleryPage: React.FC = () => {
             </div>
           </div>
         </div>
-
-        {/* Logo Section */}
-        <div className="mt-16 bg-gray-50 py-8">
-          <LogoSection />
-        </div>
       </main>
+
+      {/* ✅ Full Width Logo Section - shifted down with margin */}
+      <div className="w-full mt-16">
+        <LogoSection />
+      </div>
     </div>
   );
 };
