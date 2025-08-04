@@ -152,22 +152,12 @@ const VideoGalleryPage: React.FC = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-
-      </main>
-      
-        {/* Logo Section */}
-        <div className="mt-16 bg-gray-50 py-8">
-          <LogoSection />
-        </div>
-=======
       </main>
 
       {/* ✅ Full Width Logo Section - shifted down with margin */}
       <div className="w-full mt-16">
         <LogoSection />
       </div>
->>>>>>> 0c1bc698192c9144c5049cd6c734dc8a26f73a50
     </div>
   );
 };
