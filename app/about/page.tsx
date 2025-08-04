@@ -25,33 +25,54 @@ const team: TeamMember[] = [
     name: "Rewati Raman Dhakal",
     title: "Founder & CEO",
     image: "/team/rewati.jpg",
-    bio: "Rewati Raman Dhakal is the visionary founder and CEO of NCPD. With over 15 years of experience in philanthropy and civil society development, he has been instrumental in creating enabling environments for capacity building and networking. His leadership has guided NCPD to become a leading organization in Nepal's philanthropic sector, fostering collaboration between corporations, individuals, and communities to serve people effectively."
+    bio: "Rewati Raman Dhakal is the visionary founder and CEO of NCPD. With a profound understanding of the philanthropic landscape in Nepal, he has dedicated his career to fostering a robust civil society. His expertise lies in strategic planning, fundraising, and advocacy for policies that support charitable giving and organizational growth. Rewati has led numerous initiatives aimed at capacity building for NGOs and CSOs, and he is a strong proponent of ethical practices and transparency in the non-profit sector. His leadership has been instrumental in shaping NCPD's mission to enhance the impact and sustainability of philanthropy in the region."
   },
   {
     name: "Bishal Rai",
     title: "Co-Founder & Director",
     image: "/team/bishal.jpg",
-    bio: "Bishal Rai serves as Co-Founder and Director of NCPD, bringing extensive expertise in organizational development and strategic planning. His commitment to transparency and accountability has been crucial in establishing NCPD's credibility within the philanthropic community. He specializes in building sustainable partnerships and has played a key role in developing training programs for civil society organizations."
+    bio: "Bishal Rai serves as Co-Founder and Director of NCPD, bringing a wealth of experience in community development and project management. He plays a crucial role in designing and implementing NCPD’s training programs and workshops, focusing on practical skills for civil society organizations. Bishal is passionate about fostering collaboration among different stakeholders, including donors, corporations, and local communities, to achieve collective goals. His work often involves on-the-ground engagement, ensuring that NCPD's initiatives are responsive to the real needs of the people and organizations it serves."
   },
   {
     name: "Jerry Clewett",
     title: "International Development Consultant",
     image: "/team/jerry.jpg",
-    bio: "Jerry Clewett is an experienced International Development Consultant with a deep understanding of global philanthropic trends and best practices. He has worked across multiple continents, bringing international perspectives to NCPD's initiatives. His expertise in cross-cultural communication and international fundraising strategies has been invaluable in expanding NCPD's global network and impact."
+    bio: "Jerry Clewett is an experienced International Development Consultant with a career spanning over two decades in various global development initiatives. His expertise includes program evaluation, institutional strengthening, and cross-cultural partnership building. At NCPD, Jerry provides invaluable insights into international best practices in philanthropy and civil society development, helping to benchmark and elevate the organization's programs. He advises on strategies to attract international funding and to build sustainable relationships with global partners, thereby broadening the reach and impact of NCPD's work."
   },
   {
     name: "Dr. Christian Gahrmann",
     title: "Philanthropy & Fundraising Consultant",
     image: "/team/christian.jpg",
-    bio: "Dr. Christian Gahrmann is a renowned expert in philanthropy and fundraising with a doctoral background in social sciences. His research-driven approach has helped NCPD develop evidence-based strategies for effective fundraising and donor engagement. He has authored several publications on sustainable philanthropy and regularly conducts workshops on fundraising best practices for nonprofit organizations."
+    bio: "Dr. Christian Gahrmann is a renowned expert in philanthropy and fundraising, with extensive academic and practical experience in the field. He specializes in innovative fundraising strategies, donor engagement, and impact measurement for non-profit organizations. As a consultant for NCPD, Dr. Gahrmann provides specialized training and technical assistance to help organizations diversify their funding sources and improve their financial sustainability. His insights are crucial in guiding NCPD's research into effective giving models and in developing cutting-edge capacity-building programs for the philanthropic sector."
   },
   {
     name: "Sharad Chandra Neupane",
     title: "Development Expert",
     image: "/team/sharad.jpg",
-    bio: "Sharad Chandra Neupane is a seasoned Development Expert with comprehensive knowledge of Nepal's development landscape. His experience spans across various sectors including education, healthcare, and rural development. He has been instrumental in designing and implementing capacity-building programs that have strengthened numerous civil society organizations throughout Nepal, contributing significantly to NCPD's mission of creating sustainable impact."
+    bio: "Sharad Chandra Neupane is a seasoned Development Expert with a strong background in policy analysis, community engagement, and sustainable development. He contributes to NCPD by conducting research on the socio-economic factors influencing philanthropy in Nepal and by developing policy recommendations for a more supportive regulatory environment. Sharad is deeply involved in dialogue initiatives that bring together government, civil society, and the private sector to discuss and advance philanthropic goals. His commitment to evidence-based approaches strengthens NCPD's advocacy efforts and its overall impact on national development."
   },
 ];
+
+const tabContent = {
+  vision: {
+    title: "Vision",
+    text: "An enabling environment where philanthropy is impactful and sustainable and corporations and individuals are jointly engaged to serve the people and communities.",
+    image: "/carousel/what-is-philanthropy-bekay-ahn.jpg",
+    alt: "Vision Illustration"
+  },
+  mission: {
+    title: "Mission",
+    text: "Carry out research, capacity building, networking and dialogue whereby enabling environment is created and individuals, corporations and governments are engaged in advancing philanthropy in terms of capacity, credibility, connections, and sustainability.",
+    image: "/carousel/ncpd-conference-2019-session.jpg",
+    alt: "Mission Illustration"
+  },
+  goal: {
+    title: "Goal",
+    text: "To enhance the capacity, credibility, and sustainability of philanthropy.",
+    image: "/carousel/ncpd-certified-campaign-manager-certification-distribution-program.jpeg",
+    alt: "Goal Illustration"
+  }
+};
 
 const AboutPage = () => {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
@@ -60,29 +81,8 @@ const AboutPage = () => {
   const openModal = (member: TeamMember) => setSelectedMember(member);
   const closeModal = () => setSelectedMember(null);
 
-  const tabContent = {
-    vision: {
-      title: "Vision",
-      text: "An enabling environment where philanthropy is impactful and sustainable, and corporations and individuals are jointly engaged to serve people and communities.",
-      image: "/carousel/what-is-philanthropy-bekay-ahn.jpg",
-      alt: "Vision Illustration"
-    },
-    mission: {
-      title: "Mission",
-      text: "Carry out research, capacity building, networking, and dialogue whereby an enabling environment is created and individuals, corporations, and governments are engaged in advancing philanthropy in terms of capacity, credibility, connections, and sustainability.",
-      image: "/carousel/ncpd-conference-2019-session.jpg",
-      alt: "Mission Illustration"
-    },
-    goal: {
-      title: "Goal",
-      text: "To enhance the capacity, credibility, and sustainability of philanthropy.",
-      image: "/carousel/ncpd-certified-campaign-manager-certification-distribution-program.jpeg",
-      alt: "Goal Illustration"
-    }
-  };
-
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-blue-100 font-inter antialiased flex flex-col">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-blue-100 font-inter antialiased">
       <header className="pt-36 pb-8 px-4 sm:px-8 md:px-16 text-center bg-gradient-to-r from-blue-100 via-white to-blue-200">
         <motion.h1 className="text-4xl md:text-6xl font-extrabold text-blue-900 mb-2" initial="hidden" animate="visible" variants={fadeUp}>
           About NCPD
@@ -92,24 +92,23 @@ const AboutPage = () => {
         </nav>
       </header>
 
-      {/* Logo Section - Consistent py-6 spacing */}
       <motion.div initial="hidden" whileInView="visible" variants={fadeUp} className="w-full flex justify-center py-6">
         <img src="/about/ncpd-logo.png" alt="NCPD Highlight" className="w-1/2 h-auto object-contain rounded-xl" />
       </motion.div>
 
-      {/* Main Content Section - Consistent py-6 spacing */}
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6 space-y-6 text-gray-800 leading-relaxed">
-        {[
-          "NCPD is an organization dedicated to creating an enabling environment and opportunities for capacity building, networking, and collaboration whereby philanthropy and civil society organizations will grow.",
-          "It conducts research, training, conferences, seminars, and workshops related to philanthropy, civil society organizations, fundraising, and communication. It also provides technical support in developing strategic plans and facilitates dialogue to make philanthropy and civil society organizations more efficient and effective. Importantly, it advocates for favorable policies and infrastructure that foster philanthropy in Nepal.",
-          "NCPD's ultimate goal is to support and enhance the capacity, credibility, impact, and sustainability of philanthropy and civil society organizations."
-        ].map((text, index) => (
-          <motion.p key={index} className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 text-base sm:text-lg text-gray-800 leading-relaxed" initial="hidden" animate="visible" custom={1} variants={fadeUp}>{text}</motion.p>
-        ))}
+        <motion.p className="max-w-5xl mx-auto text-base sm:text-lg" initial="hidden" animate="visible" custom={1} variants={fadeUp}>
+          **NCPD is an organization dedicated to creating an enabling environment and opportunities for capacity building, networking, and collaboration whereby philanthropy and civil society organizations will grow.**
+        </motion.p>
+        <motion.p className="max-w-5xl mx-auto text-base sm:text-lg" initial="hidden" animate="visible" custom={2} variants={fadeUp}>
+          **It conducts research, training, conferences, seminars, and workshops related to philanthropy, civil society organizations, fundraising, and communication including other relevant topics. It also provides technical support in developing a strategic plan, conduct dialogue to make the philanthropy and civil society organization more efficient and effective. Importantly, it advocates for favourable policies and infrastructure that fosters philanthropy in Nepal.**
+        </motion.p>
+        <motion.p className="max-w-5xl mx-auto text-base sm:text-lg" initial="hidden" animate="visible" custom={3} variants={fadeUp}>
+          **NCPD's ultimate goal is to support enhancing the capacity, credibility, impact, and sustainability of philanthropy and civil society organizations.**
+        </motion.p>
       </main>
 
-      {/* Vision/Mission/Goal Section - Consistent py-6 spacing */}
-      <motion.section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={3}>
+      <motion.section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6" variants={fadeUp} initial="hidden" whileInView="visible">
         <div className="flex justify-center mb-6">
           <div className="bg-white rounded-xl p-1 border border-gray-200">
             {(['vision', 'mission', 'goal'] as const).map((tab) => (
@@ -117,9 +116,7 @@ const AboutPage = () => {
                 key={tab}
                 onClick={() => setActiveTab(tab)}
                 className={`px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-300 ${
-                  activeTab === tab
-                    ? 'bg-blue-600 text-white'
-                    : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'
+                  activeTab === tab ? 'bg-blue-600 text-white' : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'
                 }`}
               >
                 {tab.charAt(0).toUpperCase() + tab.slice(1)}
@@ -159,52 +156,71 @@ const AboutPage = () => {
         </motion.div>
       </motion.section>
 
-      {/* Objectives Section - Consistent py-6 spacing */}
-      <motion.section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={6}>
+      <motion.section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6" variants={fadeUp} initial="hidden" whileInView="visible">
         <div className="bg-white rounded-2xl p-6 sm:p-8 space-y-4">
           <h2 className="text-3xl text-center font-bold text-blue-800 mb-4 tracking-tight">Objectives</h2>
           <ul className="space-y-3 text-gray-700 text-base leading-relaxed">
-            {[
-              "Conduct and organize research, training, conferences, seminars, and workshops related to philanthropy, fundraising, communication, and branding.",
-              "Conduct dialogue for enabling environments where philanthropy can thrive.",
-              "Work with donors, advisors, financial institutions, corporations, and foundations to advise and encourage giving.",
-              "Facilitate networking and collaboration with like-minded philanthropies, fundraisers, funders, and nonprofit organizations.",
-              "Assist with strategic plan development and provide technical support to philanthropy, NGOs/CSOs for fundraising.",
-              "Support civil society organizations to uphold integrity, transparency, accountability, and professionalism.",
-              "Praise and honor ideal and unsung philanthropists."
-            ].map((obj, idx) => (
-              <li key={idx} className="flex items-start gap-3">
-                <span className="text-blue-600 mt-1">✓</span>
-                <p>{obj}</p>
-              </li>
-            ))}
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">✓</span>
+              <p>Conduct and organize research, training, conferences, seminars, workshops related to philanthropy, fundraising and communication, and branding;</p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">✓</span>
+              <p>Conduct dialogue for enabling environment whereby philanthropy fosters;</p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">✓</span>
+              <p>Work with donors, advisors, financial institutions, corporations and foundations and advise and encourage for giving;</p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">✓</span>
+              <p>Facilitate network and collaboration with likeminded philanthropies, fundraisers, funders and nonprofit organizations.</p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">✓</span>
+              <p>Facilitate strategy plan development and provide technical support to philanthropy, NGOs/CSOs for fundraising.</p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">✓</span>
+              <p>Support philanthropy/civil society organization to uphold integrity, transparency, accountability and professionalism.</p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">✓</span>
+              <p>Praise and honour ideal and unsung philanthropists.</p>
+            </li>
           </ul>
         </div>
       </motion.section>
 
-      {/* Core Values Section - Consistent py-6 spacing */}
-      <motion.section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={7}>
+      <motion.section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6" variants={fadeUp} initial="hidden" whileInView="visible">
         <div className="bg-white rounded-2xl p-6 sm:p-8 space-y-4">
           <h2 className="text-3xl text-center font-bold text-blue-800 mb-4 tracking-tight">Core Values</h2>
           <ul className="space-y-3 text-gray-700 text-base leading-relaxed">
-            {[
-              "Integrity: We are committed to honesty and sincere adherence to the highest professional, moral, and ethical standards.",
-              "Impact: We believe that philanthropic efforts should support and enhance meaningful work that serves the public good in ways that, whenever possible, are measurable and sustainable.",
-              "Inclusion: We value the full participation of communities and individuals and embrace the many forms of diversity...",
-              "Transparency and Accountability: We hold ourselves to the highest standards of organizational integrity and responsible stewardship...",
-              "Collaboration and Partnership: We embrace sharing knowledge and taking collective action..."
-            ].map((val, idx) => (
-              <li key={idx} className="flex items-start gap-3">
-                <span className="text-blue-600 mt-1">✓</span>
-                <p><strong>{val.split(":")[0]}</strong>{val.slice(val.indexOf(":"))}</p>
-              </li>
-            ))}
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">✓</span>
+              <p><strong>Integrity:</strong> We are committed to honesty and sincere adherence to the highest professional, moral, and ethical standards.</p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">✓</span>
+              <p><strong>Impact:</strong> We believe that philanthropic efforts should support and enhance meaningful work that serves the public good in ways that, whenever possible, are measurable and sustainable.</p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">✓</span>
+              <p><strong>Inclusion:</strong> We value the full participation of communities and individuals and embrace the many forms of diversity, including, but not limited to, ethnic, cultural, racial, religious, sexual orientation, economic status, physical ability, and gender.</p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">✓</span>
+              <p><strong>Transparency and Accountability:</strong> We hold ourselves to the highest standards of organizational integrity and responsible stewardship, which require open, broad, and thorough disclosure of decisions, processes, and procedures;</p>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">✓</span>
+              <p><strong>Collaboration and Partnership:</strong> We embrace sharing knowledge and taking collective action to strengthen all parties and effectively leverage resources to achieve common objectives.</p>
+            </li>
           </ul>
         </div>
       </motion.section>
 
-      {/* Team Section - Consistent py-6 spacing */}
-      <motion.section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      <motion.section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6" variants={fadeUp} initial="hidden" whileInView="visible">
         <h2 className="text-3xl font-bold text-center text-blue-900 mb-6">Our Team</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {team.map((member, index) => (
@@ -212,7 +228,7 @@ const AboutPage = () => {
               <img src={member.image} alt={member.name} className="w-32 h-32 mx-auto rounded-full object-cover mb-4" />
               <h3 className="text-xl font-semibold text-blue-800 mb-2">{member.name}</h3>
               <p className="text-sm text-gray-600 mb-4">{member.title}</p>
-              <button 
+              <button
                 onClick={() => openModal(member)}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
               >
@@ -223,11 +239,12 @@ const AboutPage = () => {
         </div>
       </motion.section>
 
-      {/* Logo Section - Consistent py-6 spacing */}
-      <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="py-6">
+      {/* ✅ Carousel: Added margin-top to shift it down */}
+      <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="mt-12">
         <LogoSection />
       </motion.div>
 
+      {/* Modal */}
       <AnimatePresence>
         {selectedMember && (
           <motion.div
