@@ -153,11 +153,12 @@ const VideoGalleryPage: React.FC = () => {
           </div>
         </div>
 
+      </main>
+      
         {/* Logo Section */}
         <div className="mt-16 bg-gray-50 py-8">
           <LogoSection />
         </div>
-      </main>
     </div>
   );
 };
