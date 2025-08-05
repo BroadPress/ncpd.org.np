@@ -86,12 +86,12 @@ const App = () => {
           <h1 className="text-3xl font-bold text-gray-900">Workshop on SDG Progress Review</h1>
           
           {/* Breadcrumbs */}
-          <nav className="mt-2 text-sm text-gray-500">
-            <Link href="/" className="hover:underline text-primary">Home</Link>
+          <nav className="mt-2 text-sm text-black">
+            <Link href="/" className="hover:underline">Home</Link>
             <span className="mx-2">/</span>
-            <Link href="/news" className="hover:underline text-primary">News</Link>
+            <Link href="/news" className="hover:underline">News</Link>
             <span className="mx-2">/</span>
-            <span className="text-gray-900">Workshop on SDG Progress Review</span>
+            <span className="text-red-800">Workshop on SDG Progress Review</span>
           </nav>
         </header>
 
