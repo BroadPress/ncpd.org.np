@@ -136,7 +136,7 @@ const App = () => {
           
           {/* Sidebar Section */}
           <aside className="lg:w-1/3 mt-8 lg:mt-0">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="p-6">
               <h2 className="text-xl font-bold text-gray-900 mb-4">Latest News</h2>
               
               <ul className="space-y-4">
