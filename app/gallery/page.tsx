@@ -70,7 +70,7 @@ const GalleryPage: React.FC = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="min-h-screen bg-white pt-40 pb-24 px-4 font-inter">
+    <div className="min-h-screen bg-white pt-40 pb-24 px-20 font-inter">
       {/* Header */}
       <div className="text-center mb-2">
         <h1 className="text-3xl md:text-5xl font-extrabold text-black">Gallery</h1>
@@ -84,14 +84,14 @@ const GalleryPage: React.FC = () => {
       </div>
 
       {/* Gallery Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
         {galleryItems.map((item) => (
           <div
             key={item.id}
             onClick={() => openModal(item)}
             className="cursor-pointer"
           >
-            <div className="w-72 h-48 relative overflow-hidden rounded-xl">
+            <div className="w-92 h-58 relative overflow-hidden rounded-xl">
               <Image
                 src={item.imageSrc}
                 alt={item.title}

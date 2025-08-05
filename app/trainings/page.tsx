@@ -61,12 +61,13 @@ const TrainingsPage: React.FC = () => {
             className="w-full max-w-7xl overflow-hidden flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-12 px-2 lg:px-12 py-6"
           >
             {/* Image */}
-            <div className="lg:w-200 relative h-64 lg:h-auto rounded-2xl bg-gray-200 flex items-center justify-center overflow-hidden group">
+            <div className="lg:w-200 relative h-64 lg:h-auto rounded-2xl flex items-center justify-center overflow-hidden group mt-4">
               <Image
                 src={training.imageSrc}
                 alt={training.title}
-                fill
-                className="rounded-3xl"
+                height={400}
+                width={400}
+                className="rounded-3xl h-80 w-full"
               />
               <div className="absolute inset-0 pointer-events-none z-10 overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-0 bg-white opacity-20 group-hover:h-full transition-all duration-700 ease-in-out" />
