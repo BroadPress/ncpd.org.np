@@ -60,13 +60,13 @@ const sidebarArticles: SidebarArticle[] = [
     {
         id: 8,
         title: 'Philanthropy and Fundraising Conference Successfully Held in Nepal',
-        imageUrl: '/home/Trend-Nepal-Foreign-Aid-Mobilization.jpeg',
+        imageUrl: '/home/ncpd-conference-2019.jpg',
         link: '/philanthropy-and-fundraising-conference-successfully-held-in-nepal',
     },
     {
         id: 9,
         title: '1st National Philanthropy and Fundraising Conference in Nepal',
-        imageUrl: '/home/Trend-Nepal-Foreign-Aid-Mobilization.jpeg',
+        imageUrl: '/home/ncpd-conference-1.png',
         link: '/1st-national-philanthropy-and-fundraising-conference-in-nepal',
     },
 ];
@@ -179,6 +179,41 @@ const App = () => {
                                 And all of these awards have been put for auction from August 31 until October 15, 2018.</p>
                             <p className="text-black leading-relaxed mb-4 text-lg font-bold">You are donating and sacrificing everything valuable you have, will it motivate or de-motivate to your's followers.</p>
                             <p className="text-black leading-relaxed mb-4 text-lg">I am doing it for a common good. Therefore, it is better if my friends, well-wishers, and patron would take it positively. It is not even disrespecting to those prestigious organizations that have respect for my efforts.</p>
+                            <div className="relative rounded-lg overflow-hidden mb-6">
+                                {/* Using a placeholder image since the original URL is not provided */}
+                                <Image
+                                    src="/home/mahabir-pun.jpg"
+                                    alt="Workshop on SDG Progress Review and Roles of Stakeholders"
+                                    width={900}
+                                    height={500}
+                                    layout="responsive"
+                                    className="rounded-lg"
+                                />
+                            </div>
+                            <p className="text-black leading-relaxed mb-4 text-lg">Dr Mahabir Pun with students visiting the National Innovation Center for learning Purpose at Kirtipur, Kathmandu, Nepal
+
+                            </p>
+                            <div className="relative rounded-lg overflow-hidden mb-6">
+                                {/* Using a placeholder image since the original URL is not provided */}
+                                <Image
+                                    src="/home/mahabir-pun1.jpg"
+                                    alt="Workshop on SDG Progress Review and Roles of Stakeholders"
+                                    width={900}
+                                    height={500}
+                                    layout="responsive"
+                                    className="rounded-lg"
+                                />
+                            </div>
+                            <p className="text-black leading-relaxed mb-4 text-lg">Dr Mahabir Pun at the project site after establishing devices in rural Nepal   </p>
+                        <p className="text-black leading-relaxed mb-4 text-lg font-bold">Do you have any message to individual and organizations?</p>
+                        <p className="text-black leading-relaxed mb-4 text-lg">Nepal's development is only possible if we pay considerable attention to nurture homegrown inventors, innovators and scientists for the economic development to happen. If we fail to do so, many of the talented, innovative and creative Nepalese will leave the country every year in search of better careers and opportunities abroad.</p>
+                        <p className="text-black leading-relaxed mb-4 text-lg">This would be an irreparable loss for a poor country like Nepal and remain as a least developed country. Therefore, it is a high time to intervene collectively to keep those talented and creative people and use their talents for the economic development of Nepal through institutions like Nepal Innovation Center.</p>
+                        <p className="text-black leading-relaxed mb-4 text-lg">Hence, my sincere and deepest urge to all of you is to join the initiatives of the NIC in nation-building. They are requested to make their level contribution in terms of time, talent and treasure.</p>
+                        <p className="text-black leading-relaxed mb-4 text-lg">We also like private sectors including banks to provide support and collaborate with us as they have the policy of CSR and directives from Nepal Rastrya Bank to allocate at least 1% of net profit in a social cause.
+
+</p>
+                        <p className="text-black leading-relaxed mb-4 text-lg">We also like to appeal to rich and generous individuals to provide donation to NIC and we are ready to name the NIC after them and also recognize them in best possible ways.</p>
+                        <p className="text-black leading-relaxed mb-4 text-lg">(Published  on <span className="text-primary font-bold"><Link href={"http://www.mangopost.org"}>http://www.mangopost.org </Link></span>dated 2019.04.10)</p>
                         </div>
                     </div>
 

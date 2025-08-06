@@ -54,19 +54,19 @@ const sidebarArticles: SidebarArticle[] = [
     {
         id: 7,
         title: 'Donating Properties, and Selling Medals for fundraising and sustainability of National Innovation Center in Nepal',
-        imageUrl: '/home/Trend-Nepal-Foreign-Aid-Mobilization.jpeg',
+        imageUrl: '/home/mahabir-pun.jpg',
         link: '/donating-properties-and-selling-medals-for-fundraising-and-sustainability-of-nat',
     },
     {
         id: 8,
         title: 'Philanthropy and Fundraising Conference Successfully Held in Nepal',
-        imageUrl: '/home/Trend-Nepal-Foreign-Aid-Mobilization.jpeg',
+        imageUrl: '/home/ncpd-conference-2019.jpg',
         link: '/philanthropy-and-fundraising-conference-successfully-held-in-nepal',
     },
     {
         id: 9,
         title: '1st National Philanthropy and Fundraising Conference in Nepal',
-        imageUrl: '/home/Trend-Nepal-Foreign-Aid-Mobilization.jpeg',
+        imageUrl: '/home/ncpd-conference-1.png',
         link: '/1st-national-philanthropy-and-fundraising-conference-in-nepal',
     },
 ];
