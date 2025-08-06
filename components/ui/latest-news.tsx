@@ -22,31 +22,31 @@ const newsData: NewsItem[] = [
     title: "Philanthropy in Nepal",
     date: "23 May 2024",
     image: "/carousel/what-is-philanthropy-bekay-ahn.jpg",
-    link: "#",
+    link: "/philanthropy-in-nepal",
   },
   {
     title: "Fundraising Training for Non Profit Organizations Held in Kathmandu",
     date: "03 Aug 2020",
     image: "/home/Fundraising.jpeg",
-    link: "#",
+    link: "/fundraising-training-for-non-profit-organizations-held-in-kathmandu",
   },
   {
     title: "Certified Fund Raising Specialist (CFRS) Training of Trainers kicked off",
     date: "03 Aug 2020",
     image: "/home/Certified.jpeg",
-    link: "#",
+    link: "/certified-fund-raising-specialist-cfrs-training-of-trainers-kicked-off",
   },
   {
     title: "Interaction Between Disablities Activists and Korean Philanthropists Held",
     date: "03 Aug 2020",
     image: "/home/Interaction Between Disability Activists and Korean Philanthropist Held.jpg",
-    link: "#",
+    link: "/interaction-between-disability-activists-and-korean-philanthropist-held",
   },
   {
     title: "Trend of Nepal Forein Aid Mobilization in different political context",
     date: "03 Aug 2020",
     image: "/home/Trend-Nepal-Foreign-Aid-Mobilization.jpeg",
-    link: "#",
+    link: "/trend-of-nepals-foreign-aid-mobilization-in-different-political-context",
   },
 ];
 

@@ -75,7 +75,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gray-100 font-sans text-gray-800 mt-20">
       <Head>
-        <title>Workshop on SDG Progress Review</title>
+        <title>Fundraising Training for Non Profit Organizations Held in Kathmandu</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
@@ -84,7 +84,7 @@ const App = () => {
         
         {/* Header */}
         <header className="mb-6">
-          <h1 className="text-3xl font-bold text-gray-900">Workshop on SDG Progress Review</h1>
+          <h1 className="text-3xl font-bold text-gray-900">Fundraising Training for Non Profit Organizations Held in Kathmandu</h1>
           
           {/* Breadcrumbs */}
           <nav className="mt-2 text-sm text-black">
@@ -92,7 +92,7 @@ const App = () => {
             <span className="mx-2">/</span>
             <Link href="/news" className="hover:underline">News</Link>
             <span className="mx-2">/</span>
-            <span className="text-red-800">Workshop on SDG Progress Review</span>
+            <span className="text-red-800">Fundraising Training for Non Profit Organizations Held in Kathmandu</span>
           </nav>
         </header>
 
@@ -104,8 +104,8 @@ const App = () => {
             <div className="relative rounded-lg overflow-hidden mb-6">
               {/* Using a placeholder image since the original URL is not provided */}
               <Image
-                src="/home/Workshop on SDGs progress Review .jpg"
-                alt="Workshop on SDG Progress Review and Roles of Stakeholders"
+                src="/home/Fundraising.jpeg"
+                alt="Fundraising Training for Non Profit Organizations Held in Kathmandu"
                 width={900}
                 height={500}
                 layout="responsive"
@@ -115,19 +115,32 @@ const App = () => {
 
             {/* Article Meta and Content */}
             <div className="p-6">
-              <span className="block text-sm text-black mb-4">23 May, 2024</span>
+              <span className="block text-sm text-black mb-4">03 Aug, 2020</span>
               
               <p className="text-black leading-relaxed mb-4 text-lg">
-                Nepal Center for Philanthropy and Development (NCPD) organized a workshop on "SDGs Progress Review & Roles of Stakeholders".  The event was organized  in partnership with Youth Initiative Nepal, Nepal SDGs Forum-NGO Federation, and GIVING Tuesday. Nepal has made significant efforts to integrate the Sustainable Development Goals (SDGs) into its national development frameworks and policies. The SDGs are a set of 17 goals adopted by all United Nations Member States in 2015, aiming to promote prosperity while protecting the planet. Nepal's commitment to the SDGs is reflected in key policy documents, such as the current 15th Development Plan and the 25 Year Long-Term Vision.  These documents internalize the SDGs and assign SDG codes to all national development programs through the Medium-Term Expenditure Framework.
+                Nepal Center for philanthropy and Development (NCPD) has successfully conducted one-day training on fundraising for key leaders of nonprofit organizations and charities in Nepal on 10th June 2019.
                 </p>
               
               <p className="text-black leading-relaxed mb-4 text-lg">
-                Nepal has made progress in implementing the Sustainable Development Goals (SDGs), but there are still challenges to overcome.
+                The training "Keys to Fundraising Success and Capacity Building" was designed for the senior level participants representing NGOs and INGOs in Nepal. The resource person of the training was Ms. Aliyah Karen, CEO of Medicare Charitable Foundation, Malaysia. In addition to, deeper knowledge and experiences in fundraising, capacity building Ms. Karen is also sound in enabling charities to be impactful and sustainable. She also happens to be a very compassionate donor to small charities in Nepal and some South East Asian countries.
+                </p>
+                <p className="text-black leading-relaxed mb-4 text-lg">
+                    During the session, she had provided tailored pragmatic knowledge, tools, and techniques suitable and effective in Nepalese context. The training has enhanced skills, networks and confidence in resource mobilization and sustaining charities says Mr. Urgen Lama one of the participants of the training.
+                </p>
+                <p className="text-black leading-relaxed mb-4 text-lg">
+                    In talking with Nepalayatimes, CEO of Nepal Center for Philanthropy and Development (NCPD) Rewati Raman Dhakal, quoted the Development Cooperation Report of Finance Ministry and shed light on the reducing foreign aid and causing financial distress and vulnerability to I/NGOs too. He also unveiled the closure of charities due to increasing financial constraints after 2017 and the importance of such training in Nepal.
+                </p>
+                <p className="text-black leading-relaxed mb-4 text-lg">
+                    As resources becoming more limited and demand increases, the training on how to raise and grow funding sources and sustain a program are of utmost importance for revenue diversification and sustainability to organize said Mr. Bishal Rai, Director of NCPD. He added that having an expert from an international level is very valuable in bringing innovative ideas and skills to Nepal and also open new doors of opportunities.
+                </p>
+                <p className="text-black leading-relaxed mb-4 text-lg">
+                    28 participants representing 7 NGOs and 10 INGOs have taken part in the training where Ms. Aliyah Karen had also provide free advice to charities leaders on becoming more independent and impactful as well as reducing donor dependency.
+                </p>
+                <p className="text-black leading-relaxed mb-4 text-lg">
+                    Most importantly, Nepal Center for Philanthropy and Development(NCPD) also organized field visits, consultative meetings and networking events to benefits emerging charities within and outskirts of Kathmandu valley from Ms. Aliyah expertise and networks. She had advised to charities working for children with spinal cord injuries, street children, a hospital dedicated for children and an NGO led to support marginalized women working in an entertainment industry during her visit to Nepal.
                 </p>
             </div>
           </div>
-          
-          {/* Sidebar Section */}
           {/* Sidebar Section */}
 <aside className="lg:w-1/3 mt-8 lg:mt-0">
     <div className="p-6">
