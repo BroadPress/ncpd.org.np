@@ -75,7 +75,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gray-100 font-sans text-gray-800 mt-20">
       <Head>
-        <title>Workshop on SDG Progress Review</title>
+        <title>Certified Fund Raising Specialist (CFRS) Training of Trainers kicked off</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
@@ -84,7 +84,7 @@ const App = () => {
         
         {/* Header */}
         <header className="mb-6">
-          <h1 className="text-3xl font-bold text-gray-900">Workshop on SDG Progress Review</h1>
+          <h1 className="text-3xl font-bold text-gray-900">Certified Fund Raising Specialist (CFRS) Training of Trainers kicked off</h1>
           
           {/* Breadcrumbs */}
           <nav className="mt-2 text-sm text-black">
@@ -92,7 +92,7 @@ const App = () => {
             <span className="mx-2">/</span>
             <Link href="/news" className="hover:underline">News</Link>
             <span className="mx-2">/</span>
-            <span className="text-red-800">Workshop on SDG Progress Review</span>
+            <span className="text-red-800">Certified Fund Raising Specialist (CFRS) Training of Trainers kicked off</span>
           </nav>
         </header>
 
@@ -104,8 +104,8 @@ const App = () => {
             <div className="relative rounded-lg overflow-hidden mb-6">
               {/* Using a placeholder image since the original URL is not provided */}
               <Image
-                src="/home/Workshop on SDGs progress Review .jpg"
-                alt="Workshop on SDG Progress Review and Roles of Stakeholders"
+                src="/home/Certified.jpeg"
+                alt="Certified Fund Raising Specialist (CFRS) Training of Trainers kicked off"
                 width={900}
                 height={500}
                 layout="responsive"
@@ -115,19 +115,18 @@ const App = () => {
 
             {/* Article Meta and Content */}
             <div className="p-6">
-              <span className="block text-sm text-black mb-4">23 May, 2024</span>
+              <span className="block text-sm text-black mb-4">03 Aug, 2020</span>
               
               <p className="text-black leading-relaxed mb-4 text-lg">
-                Nepal Center for Philanthropy and Development (NCPD) organized a workshop on "SDGs Progress Review & Roles of Stakeholders".  The event was organized  in partnership with Youth Initiative Nepal, Nepal SDGs Forum-NGO Federation, and GIVING Tuesday. Nepal has made significant efforts to integrate the Sustainable Development Goals (SDGs) into its national development frameworks and policies. The SDGs are a set of 17 goals adopted by all United Nations Member States in 2015, aiming to promote prosperity while protecting the planet. Nepal's commitment to the SDGs is reflected in key policy documents, such as the current 15th Development Plan and the 25 Year Long-Term Vision.  These documents internalize the SDGs and assign SDG codes to all national development programs through the Medium-Term Expenditure Framework.
+                Certified Fund Raising Specialist (CFRS) Training of Trainers kicked off from yesterday, 1st July 2019 in Kathmandu, Nepal. The objective of the training was to promote fundraising professionals into the trainer. The CFRS training was organized by Nepal Center for Philanthropy and Development (NCPD) in collaboration with the International Council of Non-Profit Management (ICNPM).
                 </p>
               
               <p className="text-black leading-relaxed mb-4 text-lg">
-                Nepal has made progress in implementing the Sustainable Development Goals (SDGs), but there are still challenges to overcome.
+                15 participants representing nonprofit organizations, and academia had taken part in the training. The training will be completed on 10th July and participants will be awarded 40 hours credit from the ICNPM. According to the Prof. Bekay Ahn, President of the ICNPM and resource person of the ToT the graduates of the training will also be recognized as certified trainers on philanthropy and fundraising in the region if they pass the assessment test.
                 </p>
             </div>
           </div>
           
-          {/* Sidebar Section */}
           {/* Sidebar Section */}
 <aside className="lg:w-1/3 mt-8 lg:mt-0">
     <div className="p-6">
