@@ -61,7 +61,7 @@ const TrainingsPage: React.FC = () => {
             className="w-full max-w-7xl overflow-hidden flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-12 px-2 lg:px-12 py-6"
           >
             {/* Image */}
-            <div className="lg:w-200 relative h-64 lg:h-auto rounded-2xl flex items-center justify-center overflow-hidden group mt-4">
+            <div className="lg:w-200 relative h-78 lg:h-auto rounded-2xl flex items-center justify-center overflow-hidden group mt-4">
               <Image
                 src={training.imageSrc}
                 alt={training.title}
