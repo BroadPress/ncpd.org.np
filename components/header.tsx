@@ -57,18 +57,31 @@ export default function Header() {
   <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-2 py-2 flex flex-wrap sm:flex-nowrap justify-between items-center gap-2 text-[11px] sm:text-xs md:text-sm">
     
     {/* Contact Info - Left Side */}
-    <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+    <div className="hidden lg:flex items-center gap-4">
+  <div className="flex items-center gap-1 whitespace-nowrap">
+    <span>📞</span>
+    <span>+977 9842026513</span>
+  </div>
+  <div className="flex items-center gap-1 whitespace-nowrap">
+    <span>📞</span>
+    <span>+977 9842044215</span>
+  </div>
+  <div className="flex items-center gap-1 whitespace-nowrap">
+    <span>✉️</span>
+    <span>info@ncpd.org.np</span>
+  </div>
+</div>
+
+
+      <div className="lg:hidden flex flex-wrap items-center gap-x-4 gap-y-1">
       <div className="flex items-center gap-1 whitespace-nowrap">
-        <span>📞</span>
-        <span>+977 9842026513</span>
+       <a href="+977 9842026513"> <span>📞</span></a>
       </div>
       <div className="flex items-center gap-1 whitespace-nowrap">
-        <span>📞</span>
-        <span>+977 9842044215</span>
+        <a href="+977 9842044215"><span>📞</span></a>
       </div>
       <div className="flex items-center gap-1 whitespace-nowrap">
-        <span>✉️</span>
-        <span>info@ncpd.org.np</span>
+       <a href="info@ncpd.org.np"> <span>✉️</span></a>
       </div>
     </div>
 
