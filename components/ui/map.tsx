@@ -20,7 +20,7 @@ const MapSection: React.FC = () => {
         <div className="overflow-hidden">
 
           {/* Google Map Embed */}
-          <div className="relative w-full" style={{ paddingBottom: '175%' /* 4:3 Aspect Ratio */ }}>
+          <div className="relative w-full" style={{ paddingBottom: '60%' /* 4:3 Aspect Ratio */ }}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113032.65322787261!2d85.24373135767756!3d27.708935957714655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e0!3m2!1sen!2snp!4v1753111493498!5m2!1sen!2snp"
               width="600"
@@ -29,7 +29,7 @@ const MapSection: React.FC = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+              className="absolute top-0 left-0 w-full h-screen rounded-lg shadow-lg"
             ></iframe>
           </div>
         </div>

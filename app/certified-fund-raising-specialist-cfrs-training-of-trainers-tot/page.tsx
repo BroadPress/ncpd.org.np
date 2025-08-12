@@ -83,7 +83,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 font-sans text-gray-800">
+    <div className="bg-gray-100 text-gray-800">
 
       {/* Header */}
       <header className="py-6 pt-40">
@@ -259,8 +259,8 @@ const App: React.FC = () => {
           <p className="text-gray-700 leading-relaxed mb-4">
             Hotel Greenwich, Bakhundol, Sanepa, Lalitpur, Nepal
           </p>
-          <MapSection />
         </section>
+          <MapSection />
         {/* Contact Section */}
         <section className="p-6 mb-8 text-md">
           <h1 className="text-4xl font-bold text-gray-800 mb-2 self-start">
@@ -300,8 +300,8 @@ const App: React.FC = () => {
               www.ncpd.org.np
             </a></p>
         </section>
-        <LogoSection />
       </main>
+        <LogoSection />
     </div>
   );
 };

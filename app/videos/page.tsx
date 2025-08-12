@@ -2,6 +2,7 @@
 import LogoSection from "@/components/ui/logo";
 import React, { useState, useRef, useEffect } from "react";
 import { Send, Copy, Facebook, Twitter } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface Video {
   id: string;
@@ -117,22 +118,17 @@ const VideoCard: React.FC<{ video: Video }> = ({ video }) => {
 
 const VideoGalleryPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50 font-inter antialiased">
-      {/* Header */}
-      <header className="px-4 sm:px-8 lg:px-20 pb-10 pt-40">
-        <div className="text-center">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-black mb-2">
-            Videos
-          </h1>
-          <nav className="text-sm text-blue-600 font-bold">
-            <a href="/" className="hover:underline">Home</a>
-            <span className="mx-1">/</span>
-            <span className="text-blue-600">Video</span>
-          </nav>
-        </div>
+    <>{/* Header */}
+      <header className="pt-36 pb-8 px-4 sm:px-8 md:px-16 text-center bg-gradient-to-r from-blue-100 via-white to-blue-200">
+        <motion.h1 className="text-4xl md:text-6xl font-extrabold text-blue-900 mb-2" initial="hidden" animate="visible">
+          Videos
+        </motion.h1>
+        <nav className="text-sm text-gray-600 mt-2">
+          <a href="/" className="text-blue-700 hover:text-blue-900">Home</a> / <span className="text-blue-600">Videos</span>
+        </nav>
       </header>
-
-      {/* Video Content */}
+    <div className="bg-gray-50 font-inter antialiased">
+            {/* Video Content */}
       <main className="container mx-auto px-4 sm:px-6 lg:px-24 py-10">
         <div className="flex flex-col md:flex-row gap-10 justify-center items-stretch">
           {/* Left video */}
@@ -153,12 +149,9 @@ const VideoGalleryPage: React.FC = () => {
           </div>
         </div>
       </main>
-
-      {/* ✅ Full Width Logo Section - shifted down with margin */}
-      <div className="w-full mt-16">
-        <LogoSection />
-      </div>
     </div>
+        <LogoSection />
+    </>
   );
 };
 

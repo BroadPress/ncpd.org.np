@@ -135,7 +135,7 @@ const ContactPage: React.FC = () => {
     </p>
   </div>
 
-  <div className="h-[500px] w-full rounded-4xl overflow-hidden">
+  <div className="h-full w-full rounded-4xl overflow-hidden">
     <MapSection />
   </div>
 </div>

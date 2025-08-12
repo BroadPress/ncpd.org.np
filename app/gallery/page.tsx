@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import LogoSection from "@/components/ui/logo";
+import { motion } from "framer-motion";
 
 interface SubImage {
   id: string;
@@ -70,20 +71,17 @@ const GalleryPage: React.FC = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="min-h-screen bg-white pt-40 pb-24 px-20 font-inter">
-      {/* Header */}
-      <div className="text-center mb-2">
-        <h1 className="text-3xl md:text-5xl font-extrabold text-black">Gallery</h1>
-      </div>
-
-      {/* Breadcrumb */}
-      <div className="text-center mb-12 text-sm font-medium text-blue-600">
-        <a href="/" className="hover:text-blue-800 transition-colors">Home</a>
-        <span className="mx-1">/</span>
-        <span>Gallery</span>
-      </div>
-
-      {/* Gallery Grid */}
+    <>{/* Header */}
+      <header className="pt-36 pb-8 px-4 sm:px-8 md:px-16 text-center bg-gradient-to-r from-blue-100 via-white to-blue-200">
+        <motion.h1 className="text-4xl md:text-6xl font-extrabold text-blue-900 mb-2" initial="hidden" animate="visible">
+          Gallery
+        </motion.h1>
+        <nav className="text-sm text-gray-600 mt-2">
+          <a href="/" className="text-blue-700 hover:text-blue-900">Home</a> / <span className="text-blue-600">Gallery</span>
+        </nav>
+      </header>
+    <div className=" bg-white pt-20 pb-24 px-20 font-inter">
+            {/* Gallery Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
         {galleryItems.map((item) => (
           <div
@@ -161,12 +159,10 @@ const GalleryPage: React.FC = () => {
           </div>
         </div>
       )}
-
-      {/* Footer Logo */}
-      <div className="mt-24">
-        <LogoSection />
-      </div>
     </div>
+          {/* Footer Logo */}
+        <LogoSection />
+    </>
   );
 };
 

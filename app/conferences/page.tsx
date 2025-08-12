@@ -95,7 +95,7 @@ export default function ConferencesPage() {
 
             <a
               href="/1st-national-philanthropy-and-fundraising-conference"
-              className="relative inline-block px-8 py-3 rounded-xl text-base font-medium text-white bg-primary w-fit overflow-hidden group"
+              className="relative inline-block px-8 py-3 rounded-xl text-base font-medium text-white bg-primary w-full sm:w-auto mx-auto group text-center"
             >
               <span className="absolute inset-0 bg-secondary w-0 group-hover:w-full transition-all duration-700 ease-in-out origin-left z-0"></span>
               <span className="relative z-10">View More</span>
