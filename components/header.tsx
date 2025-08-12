@@ -50,41 +50,61 @@ export default function Header() {
         <div className="bg-white shadow-md transition-all duration-300">
           {/* Contact Bar */}
           <div
-            className={`bg-[#0ea5e9] text-xs text-white transition-all duration-300 overflow-hidden leading-tight ${
-              isScrolled ? "max-h-0 opacity-0" : "max-h-14 opacity-100"
-            }`}
-          >
-            <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-3 flex justify-between items-center min-h-full">
-              {/* Contact Info - Left Side */}
-              <div className="flex items-center space-x-4">
-                <div className="flex items-center space-x-1">
-                  <span>📞</span>
-                  <span>+977 9842026513</span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  <span>📞</span>
-                  <span>+977 9842044215</span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  <span>✉️</span>
-                  <span>info@ncpd.org.np</span>
-                </div>
-              </div>
+  className={`bg-[#0ea5e9] text-white transition-all duration-300 overflow-hidden leading-tight ${
+    isScrolled ? "max-h-0 opacity-0" : "max-h-28 sm:max-h-20 opacity-100"
+  }`}
+>
+  <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-2 py-2 flex flex-wrap sm:flex-nowrap justify-between items-center gap-2 text-[11px] sm:text-xs md:text-sm">
+    
+    {/* Contact Info - Left Side */}
+    <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+      <div className="flex items-center gap-1 whitespace-nowrap">
+        <span>📞</span>
+        <span>+977 9842026513</span>
+      </div>
+      <div className="flex items-center gap-1 whitespace-nowrap">
+        <span>📞</span>
+        <span>+977 9842044215</span>
+      </div>
+      <div className="flex items-center gap-1 whitespace-nowrap">
+        <span>✉️</span>
+        <span>info@ncpd.org.np</span>
+      </div>
+    </div>
 
-              {/* Social Media Icons - Right Side */}
-              <div className="flex items-center space-x-3">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity text-white">
-                  <FaTwitter size={16} />
-                </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity text-white">
-                  <FaFacebookF size={16} />
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity text-white">
-                  <FaLinkedinIn size={16} />
-                </a>
-              </div>
-            </div>
-          </div>
+    {/* Social Media Icons - Right Side */}
+    <div className="flex items-center gap-3 ml-auto sm:ml-0">
+      <a
+        href="https://twitter.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:opacity-80 transition-opacity"
+        aria-label="Twitter"
+      >
+        <FaTwitter size={14} className="sm:size-[16px]" />
+      </a>
+      <a
+        href="https://facebook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:opacity-80 transition-opacity"
+        aria-label="Facebook"
+      >
+        <FaFacebookF size={14} className="sm:size-[16px]" />
+      </a>
+      <a
+        href="https://linkedin.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:opacity-80 transition-opacity"
+        aria-label="LinkedIn"
+      >
+        <FaLinkedinIn size={14} className="sm:size-[16px]" />
+      </a>
+    </div>
+  </div>
+</div>
+
 
           {/* Navbar */}
           <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex items-center h-[54px] relative">
