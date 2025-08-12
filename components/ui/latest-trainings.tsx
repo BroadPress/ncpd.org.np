@@ -90,14 +90,13 @@ export default function LatestTrainingPage() {
                 </p>
               </li>
             </ul>
-
-            <a
-              href="/certified-fund-raising-specialist-cfrs-training-of-trainers-tot"
-              className="relative inline-block px-8 py-3 rounded-xl text-base font-medium text-white bg-primary w-fit overflow-hidden group"
-            >
-              <span className="absolute inset-0 bg-secondary w-0 group-hover:w-full transition-all duration-700 ease-in-out origin-left z-0"></span>
-              <span className="relative z-10">View More</span>
-            </a>
+<a
+  href="/certified-fund-raising-specialist-cfrs-training-of-trainers-tot"
+  className="relative inline-block px-8 py-3 rounded-xl text-base font-medium text-white bg-primary w-full sm:w-auto mx-auto group text-center"
+>
+  <span className="absolute inset-0 bg-secondary w-0 group-hover:w-full transition-all duration-700 ease-in-out origin-left z-0"></span>
+  <span className="relative z-10">View More</span>
+</a>
 
           </div>
         </div>
