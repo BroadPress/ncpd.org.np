@@ -16,7 +16,7 @@ export default function LatestTrainingPage() {
       {/* Training Card */}
       <main className="flex justify-center">
         <div className="w-full max-w-7xl overflow-hidden flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-12 px-2 lg:px-12 py-6">
-          <div className="lg:w-200 relative h-54 lg:h-auto flex items-center justify-center overflow-hidden group mt-4">
+          <div className="lg:w-200 relative h-74 lg:h-auto flex items-center justify-center overflow-hidden group mt-4">
             <Image
               src="/training/latest.jpeg"
               alt="Certified Fund Raising Specialist Training"
