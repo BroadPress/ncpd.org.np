@@ -4,23 +4,23 @@ import React, { useEffect, useState } from "react";
 
 const slides = [
   {
-    image: "/carousel/ncpd-conference-2019-session.jpg",
+    image: "/carousel/1.jpg",
     title: "1st National Philanthropy And Fundraising Conference",
     button: "Read More",
   },
   {
-    image: "/carousel/ncpd-conference-kathmandu-2019-Inagu.jpeg",
+    image: "/carousel/2.jpg",
     title:
       "1st National Philanthropy Award Provided To Mayor Vayas Municipality And Behalf Of The Ancient Philanthropist Ghasi Grasscutter",
     button: "Read More",
   },
   {
-    image: "/carousel/what-is-philanthropy-bekay-ahn.jpg",
+    image: "/carousel/3.jpg",
     title: "Prof. Bekay Ahn Presenting On The Global Philanthropy Trends And Practices",
     button: "Read More",
   },
   {
-    image: "/carousel/Networking-Among-Philanthropy-Actors-Nepal.jpg",
+    image: "/carousel/4.jpg",
     title: "Offering Networking Opportunities For Philanthropy Actors",
     button: "Read More",
   },
