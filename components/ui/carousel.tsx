@@ -4,31 +4,31 @@ import React, { useEffect, useState } from "react";
 
 const slides = [
   {
-    image: "/carousel/1.jpg",
+    image: "/home/slider/1.jpg",
     title: "1st National Philanthropy And Fundraising Conference",
     button: "Read More",
   },
   {
-    image: "/carousel/2.jpg",
+    image: "/home/slider/2.jpg",
     title:
       "1st National Philanthropy Award Provided To Mayor Vayas Municipality And Behalf Of The Ancient Philanthropist Ghasi Grasscutter",
     button: "Read More",
   },
   {
-    image: "/carousel/3.jpg",
+    image: "/home/slider/3.jpg",
     title: "Prof. Bekay Ahn Presenting On The Global Philanthropy Trends And Practices",
     button: "Read More",
   },
   {
-    image: "/carousel/4.jpg",
+    image: "/home/slider/4.jpg",
     title: "Offering Networking Opportunities For Philanthropy Actors",
     button: "Read More",
   },
-  {
-    image: "/carousel/ncpd-certified-campaign-manager-certification-distribution-program.jpeg",
-    title: "Certified Fund Raising Specialist (CFRS)",
-    button: "Read More",
-  },
+  // {
+  //   image: "/carousel/ncpd-certified-campaign-manager-certification-distribution-program.jpeg",
+  //   title: "Certified Fund Raising Specialist (CFRS)",
+  //   button: "Read More",
+  // },
 ];
 
 const ImageCarousel: React.FC = () => {
