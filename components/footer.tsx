@@ -2,6 +2,7 @@
 import React from 'react';
 import { Facebook, Twitter, Mail, Linkedin, Youtube, Phone, LocationEdit } from 'lucide-react';
 import { FaWhatsapp, FaFacebookMessenger, FaArrowRight } from 'react-icons/fa';
+import { FaPhone } from "react-icons/fa";
 import Link from "next/link"
 
 export default function Footer() {
@@ -12,7 +13,7 @@ export default function Footer() {
       <div className="fixed bottom-5 right-5 z-50 flex flex-col space-y-4">
         {/* WhatsApp */}
         <a
-          href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fncpd.org.np%2F&app_id=291494419107518&redirect_uri=https%3A%2F%2Fwww.sharethis.com"
+          href=" https://api.whatsapp.com/send?phone=9779842026513&text=Hi,%20I'm%20contacting%20through%20www.ncpd.org.np%20"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-600 text-white rounded-full p-4 shadow-lg hover:scale-110 transition-transform duration-200"
@@ -20,15 +21,13 @@ export default function Footer() {
           <FaWhatsapp className="w-6 h-6" />
         </a>
 
-        {/* Messenger */}
+        {/* Phone */}
         <a
-          href="https://messenger.com/t/yourpage"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-blue-500 text-white rounded-full p-4 shadow-lg hover:scale-110 transition-transform duration-200"
-        >
-          <FaFacebookMessenger className="w-6 h-6" />
-        </a>
+  href="tel:+9779842026513"
+  className="bg-blue-500 text-white rounded-full p-4 shadow-lg hover:scale-110 transition-transform duration-200"
+>
+  <FaPhone className="w-6 h-6" />
+</a>
       </div>
 
 
