@@ -40,6 +40,7 @@ export default function Header() {
     { name: "Gallery", href: "/gallery" },
     { name: "Videos", href: "/videos" },
     { name: "Contact", href: "/contact" },
+    {name:"Get Involved", href:"/get-involved"},
   ];
 
   return (
