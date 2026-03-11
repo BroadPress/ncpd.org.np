@@ -5,23 +5,23 @@ import React, { useEffect, useState } from "react";
 const slides = [
   {
     image: "/home/slider/1.jpg",
-    title: "1st National Philanthropy And Fundraising Conference",
+    title: "An interaction programme titled “Shared Leadership, Shared Future, Reimagining Public, Private and Philanthropic Partnerships.",
     button: "Read More",
   },
   {
     image: "/home/slider/2.jpg",
     title:
-      "1st National Philanthropy Award Provided To Mayor Vayas Municipality And Behalf Of The Ancient Philanthropist Ghasi Grasscutter",
+      "Assembling and exploring synergies through interaction.",
     button: "Read More",
   },
   {
     image: "/home/slider/3.jpg",
-    title: "Prof. Bekay Ahn Presenting On The Global Philanthropy Trends And Practices",
+    title: "Experience sharing on the current philanthropic and fundraising landscape.",
     button: "Read More",
   },
   {
     image: "/home/slider/4.jpg",
-    title: "Offering Networking Opportunities For Philanthropy Actors",
+    title: "Promoting the culture of compassion and giving among youths.",
     button: "Read More",
   },
   // {
