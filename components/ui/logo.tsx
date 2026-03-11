@@ -7,26 +7,46 @@ const logos = [
     href: "http://www.mangopost.org/",
     img: "/contact/mangopost.png",
     alt: "MANG Logo",
-    className: "w-72 h-32",
+    className: "w-72 h-28",
   },
   {
     href: "https://www.apawards.org/",
     img: "/contact/APA_logo_90.png",
     alt: "APA Logo",
-    className: "w-48 h-24",
+    className: "w-72 h-28",
   },
-  {
-    href: "https://www.cfre.org/",
-    img: "/contact/cfre.jpg",
-    alt: "CFRE Logo",
-    className: "w-48 h-24",
-  },
+  // {
+  //   href: "https://www.cfre.org/",
+  //   img: "/contact/cfre.jpg",
+  //   alt: "CFRE Logo",
+  //   className: "w-72 h-28",
+  // },
   {
     href: "https://wingsweb.org/",
     img: "/contact/blue vertical.png",
     alt: "Wings Logo",
-    className: "w-80 h-32",
+    className: "w-72 h-28",
   },
+  {
+    href: "https://avpn.asia/",
+    img: "/contact/avpn.jpg",
+    alt: "AVPN Logo",
+    className: "w-72 h-28 object-contain filter brightness-0 invert-[15%] sepia saturate-[5000%] hue-rotate-[330deg]",
+  },
+  {
+    href: "https://www.givingtuesday.org/",
+    img: "/contact/GT_logo_stacked2.png",
+    alt: "Giving Tuesday Logo",
+    className: "w-72 h-28 ",
+  },
+  {
+    href: "https://give.asia/",
+    img: "/contact/giveasia-logo_2x.webp",
+    alt: "Give Asian",
+    className: "w-72 h-28 ",
+  },
+  
+ 
   // {
   //   href: "#",
   //   img: "/sponsers/Youth-vision1.jpg",
@@ -167,7 +187,7 @@ export default function LogoSection() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={logo.alt}
-              className="shrink-0 mx-4"
+              className="shrink-0 mx-8"
             >
               <div className={`relative ${logo.className}`}>
                 <Image

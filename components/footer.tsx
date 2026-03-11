@@ -23,11 +23,11 @@ export default function Footer() {
 
         {/* Phone */}
         <a
-  href="tel:+9779842026513"
-  className="bg-blue-500 text-white rounded-full p-4 shadow-lg hover:scale-110 transition-transform duration-200"
->
-  <FaPhone className="w-6 h-6" />
-</a>
+          href="tel:+9779842026513"
+          className="bg-blue-500 text-white rounded-full p-4 shadow-lg hover:scale-110 transition-transform duration-200"
+        >
+          <FaPhone className="w-6 h-6" />
+        </a>
       </div>
 
 
@@ -91,19 +91,19 @@ export default function Footer() {
 
                 <div className="flex items-center space-x-1.5 hover:text-secondary group">
                   <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
-                 <Link href="/gallery" className="text-[16px] relative group">
+                  <Link href="/gallery" className="text-[16px] relative group">
                     Gallery
                     <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
                   </Link>
                 </div>
-                 <div className="flex items-center space-x-1.5 hover:text-secondary group">
+                <div className="flex items-center space-x-1.5 hover:text-secondary group">
                   <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
-                 <Link href="/videos" className="text-[16px] relative group">
+                  <Link href="/videos" className="text-[16px] relative group">
                     Videos
                     <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
                   </Link>
                 </div>
-                
+
               </div>
             </div>
 
@@ -111,28 +111,28 @@ export default function Footer() {
             <div className="md:col-span-1">
               <h4 className='text-[2rem] font-bold text-gray-900 mb-4'>Helpful Links</h4>
               <div className="space-y-2">
-                 <div className="flex items-center space-x-1.5 hover:text-secondary group">
+                <div className="flex items-center space-x-1.5 hover:text-secondary group">
                   <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
-                 <Link href="/trainings" className="text-[16px] relative group">
+                  <Link href="/trainings" className="text-[16px] relative group">
                     Trainings
                     <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
                   </Link>
                 </div>
-                 <div className="flex items-center space-x-1.5 hover:text-secondary group">
+                <div className="flex items-center space-x-1.5 hover:text-secondary group">
                   <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
-                 <Link href="/conferences" className="text-[16px] relative group">
+                  <Link href="/conferences" className="text-[16px] relative group">
                     Conferences
                     <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
                   </Link>
                 </div>
-                 <div className="flex items-center space-x-1.5 hover:text-secondary group">
+                <div className="flex items-center space-x-1.5 hover:text-secondary group">
                   <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
-                 <Link href="/news" className="text-[16px] relative group">
+                  <Link href="/news" className="text-[16px] relative group">
                     News
                     <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
                   </Link>
                 </div>
-                 
+
               </div>
             </div>
 
@@ -173,8 +173,18 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="bg-slate-200 text-black text-center my-2">
           <p className="text-[16px]">
-            © 2025 <span>Nepal Center for Philanthropy & Development</span> || All Rights
-            Reserved.
+            © 2026 <span>Nepal Center for Philanthropy & Development</span> || All Rights Reserved.{' '}
+            <span>
+              Built with:{" "}
+              <a
+                href="https://broadpress.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black"
+              >
+                BroadPress
+              </a>
+            </span>
           </p>
         </div>
       </footer>
