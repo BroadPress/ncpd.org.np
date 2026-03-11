@@ -137,7 +137,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="max-w-6xl mx-auto px-6 py-12">
+      {/* <section className="max-w-6xl mx-auto px-6 py-12">
 
         <h2 className="text-3xl font-bold text-center text-blue-900 mb-4">
           Meet the Team
@@ -175,7 +175,7 @@ export default function AboutPage() {
 
         </div>
 
-      </section>
+      </section> */}
 
       <div className="mt-16">
         <LogoSection />
