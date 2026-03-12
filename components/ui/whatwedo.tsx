@@ -7,17 +7,17 @@ const WhatWeDoPage: React.FC = () => {
     {
       title: "Building Knowledge through Research & Documentation",
       description:
-        "We aim to support the civil society ecosystem through data-led research and knowledge on financing trends, indigenous giving practices, CSR and ESG policies, and cross-border giving. Our findings aim to power policy dialogue, advocacy, and sector planning, while our documentation of traditional philanthropic values will boost that Nepal’s giving heritage."
+        "We strengthen the civil society ecosystem through data-driven research and knowledge on financing trends, indigenous giving practices, CSR and ESG policies, and cross-border philanthropy. Our research informs policy dialogue, advocacy, and sector planning, while our documentation of traditional philanthropic values highlights and preserves Nepal’s rich heritage of giving."
     },
     {
       title: "Facilitating Multi-Stakeholder Dialogue",
       description:
-        "We create spaces for open dialogue between government, philanthropy, CSOs, donors, and the private sector. These convenings promote alignment with national development priorities, foster cross-sectoral learning and exchange, lay foundations for multi-stakeholder partnerships, and foster shared accountability for development and change."
+        "We create inclusive spaces for dialogue among government, philanthropy, CSOs, donors, and the private sector. These convenings encourage alignment with national development priorities, promote cross-sector learning and exchange, support collaboration and partnerships, and strengthen shared accountability for sustainable development and social change."
     },
     {
       title: "Recognizing Unsung Philanthropists and Community Champions",
       description:
-        "NCPD honors local changemakers whose impactful efforts often go unnoticed. By celebrating these individuals, we foster a culture of giving, volunteerism, and community-driven leadership."
+        "We recognize and celebrate local changemakers whose meaningful contributions often go unnoticed. By honoring their work, we uplift stories of generosity and leadership that inspire others. This recognition helps nurture a stronger culture of giving, volunteerism, and community-driven action across Nepal."
     }
   ];
 
@@ -43,7 +43,6 @@ const WhatWeDoPage: React.FC = () => {
         "We assist CSOs in conducting monitoring and evaluation—helping them articulate both outcomes and impact. Our services include support for baseline, midline, and endline assessments, as well as learning-oriented evaluations."
     }
   ];
-
   return (
     <section className="w-full bg-gradient-to-br from-blue-50 via-white to-blue-50 py-16 px-6 lg:px-20">
       <div className="max-w-7xl mx-auto">
@@ -56,61 +55,58 @@ const WhatWeDoPage: React.FC = () => {
           We believe that a vibrant, effective civil society and philanthropy is essential for inclusive and lasting development rooted in local action and community leadership. We work to strengthen the capacity, credibility, and connectivity of civil society and philanthropic organizations and champions across Nepal and also internationally equipping them to drive change with trust, impact, and resilience.
         </p>
 
-        {/* Ecosystem Section */}
+        {/* Ecosystem Section - 3 Cards Centered */}
         <div className="mb-20">
-
           <h2 className="text-3xl font-bold text-blue-900 mb-10 text-center">
             Ecosystem and Network Strengthening
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Changed to lg:grid-cols-3 and added justify-center */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
             {ecosystemServices.map((service, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition duration-300"
+                className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition duration-300 w-full max-w-sm mx-auto flex flex-col"
               >
                 <h3 className="text-lg font-semibold text-blue-900 mb-3">
                   {service.title}
                 </h3>
-
                 <p className="text-gray-600 text-sm leading-relaxed">
                   {service.description}
                 </p>
               </div>
             ))}
           </div>
-
         </div>
 
-        {/* Direct Support Section */}
+        {/* Direct Support Section - 4 Cards Centered */}
         <div>
-
           <h2 className="text-3xl font-bold text-blue-900 mb-10 text-center">
             Direct Support for Philanthropy and Civil Society Organizations
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* grid-cols-4 for large screens, justify-center for alignment */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
             {supportServices.map((service, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition duration-300"
+                className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition duration-300 w-full max-w-sm mx-auto flex flex-col"
               >
                 <h3 className="text-lg font-semibold text-blue-900 mb-3">
                   {service.title}
                 </h3>
-
                 <p className="text-gray-600 text-sm leading-relaxed">
                   {service.description}
                 </p>
               </div>
             ))}
           </div>
-
         </div>
 
       </div>
     </section>
   );
+
 };
 
 export default WhatWeDoPage;

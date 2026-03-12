@@ -78,7 +78,7 @@ export default function Footer() {
               </div>
             </div>
             {/* Quick Links */}
-            <div className="md:col-span-1">
+            {/* <div className="md:col-span-1">
               <h4 className='text-[2rem] font-bold text-gray-900 mb-4'>Quick Links</h4>
               <div className="space-y-2">
                 <div className="flex items-center space-x-1.5 hover:text-secondary group">
@@ -100,6 +100,53 @@ export default function Footer() {
                   <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
                   <Link href="/videos" className="text-[16px] relative group">
                     Videos
+                    <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
+                  </Link>
+                </div>
+
+              </div>
+            </div> */}
+            <div className="md:col-span-1">
+              <h4 className='text-[2rem] font-bold text-gray-900 mb-4'>Get Involved</h4>
+
+              <div className="space-y-2">
+
+                <div className="flex items-center space-x-1.5 hover:text-secondary group">
+                  <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
+                  <a href="mailto:info@ncpd.org.np" className="text-[16px] relative group">
+                    Become a Volunteer
+                    <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
+                  </a>
+                </div>
+
+                <div className="flex items-center space-x-1.5 hover:text-secondary group">
+                  <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
+                  <Link href="/team" className="text-[16px] relative group">
+                    Our Team
+                    <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
+                  </Link>
+                </div>
+
+                <div className="flex items-center space-x-1.5 hover:text-secondary group">
+                  <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
+                  <Link href="/about" className="text-[16px] relative group">
+                    About
+                    <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
+                  </Link>
+                </div>
+
+                <div className="flex items-center space-x-1.5 hover:text-secondary group">
+                  <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
+                  <Link href="/trainings" className="text-[16px] relative group">
+                    Trainings
+                    <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
+                  </Link>
+                </div>
+
+                <div className="flex items-center space-x-1.5 hover:text-secondary group">
+                  <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
+                  <Link href="/contact" className="text-[16px] relative group">
+                    Contact
                     <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
                   </Link>
                 </div>

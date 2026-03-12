@@ -11,7 +11,7 @@ export default function Home() {
       <ImageCarousel />
 
       {/* New Section Below Carousel */}
-      <section className="bg-gray-100 py-16 px-6">
+      <section className="bg-[#FBFDFF] py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
             We are a trusted bridge to connect donors and doers, to fill

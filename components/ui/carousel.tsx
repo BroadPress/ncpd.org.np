@@ -71,7 +71,7 @@ const ImageCarousel: React.FC = () => {
           {/* --- END: Added gradient overlay --- */}
 
           <div className="absolute top-[70%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 text-primary text-left px-4">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white max-w-3xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white max-w-3xl mx-auto mt-38">
               {slide.title}
             </h2>
             <button className="mt-6 px-6 py-2 bg-[#0ea5e9] rounded-full border-2 border-[#0ea5e9] text-white transition hover:bg-[#0b74a3] hover:border-[#0b74a3] hover:text-white cursor-pointer">

@@ -3,12 +3,12 @@ import React from "react";
 import Image from "next/image";
 
 const logos = [
-  {
-    href: "http://www.mangopost.org/",
-    img: "/contact/mangopost.png",
-    alt: "MANG Logo",
-    className: "w-72 h-28",
-  },
+  // {
+  //   href: "http://www.mangopost.org/",
+  //   img: "/contact/mangopost.png",
+  //   alt: "MANG Logo",
+  //   className: "w-72 h-28",
+  // },
   {
     href: "https://www.apawards.org/",
     img: "/contact/APA_logo_90.png",
@@ -27,23 +27,23 @@ const logos = [
     alt: "Wings Logo",
     className: "w-72 h-28",
   },
-  {
-    href: "https://avpn.asia/",
-    img: "/contact/avpn.jpg",
-    alt: "AVPN Logo",
-    className: "w-72 h-28 object-contain filter brightness-0 invert-[15%] sepia saturate-[5000%] hue-rotate-[330deg]",
-  },
+  // {
+  //   href: "https://avpn.asia/",
+  //   img: "/contact/avpn.jpg",
+  //   alt: "AVPN Logo",
+  //   className: "w-72 h-28 object-contain filter brightness-0 invert-[15%] sepia saturate-[5000%] hue-rotate-[330deg]",
+  // },
   {
     href: "https://www.givingtuesday.org/",
     img: "/contact/GT_logo_stacked2.png",
     alt: "Giving Tuesday Logo",
-    className: "w-72 h-28 ",
+    className: "w-72 h-22",
   },
   {
     href: "https://give.asia/",
     img: "/contact/giveasia-logo_2x.webp",
     alt: "Give Asian",
-    className: "w-72 h-28 ",
+    className: "w-72 h-22 ",
   },
   
  

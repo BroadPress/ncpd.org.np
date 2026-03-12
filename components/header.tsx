@@ -124,7 +124,7 @@ export default function Header() {
           {/* Navbar */}
           <div className="container mx-auto px-4 sm:px-6 lg:px-12 flex items-center h-[54px] relative">
             {/* Logo */}
-            <a href="/" className="flex items-center absolute left-4 lg:left-8 top-1/2 -translate-y-1/2">
+            <a href="/" className="flex items-center absolute left-4 md:left-12 lg:left-18 top-1/2 -translate-y-1/2">
               <Image
                 src="/logo.png"
                 alt="Logo"
@@ -132,7 +132,7 @@ export default function Header() {
                 quality={100}
                 width={65} // you can keep or remove this now
                 height={65} // keep or remove this now
-                className="w-[45px] h-[35px] transition-all duration-300"
+                className="w-[45px] h-[35px] transition-all duration-300 "
               />
             </a>
 
