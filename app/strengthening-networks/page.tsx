@@ -35,10 +35,12 @@ export default function StrengtheningNetworksPage() {
 
       {/* Main Section */}
       <main className="container mx-auto px-6 md:px-20 py-12">
-        <h2 className="text-xl mb-6 text-gray-700 leading-relaxed">
-          We connect key stakeholders to foster synergies – both within Nepal and globally, 
-          so that the power of human connections can nurture a better future for all.
-        </h2>
+        <p className="text-xl mb-6 text-gray-700 leading-relaxed">
+          By bringing together philanthropists, civil society organizations, community leaders, businesses, policymakers, and development partners, we help create platforms where ideas, resources, and experiences can be shared openly. These connections enable stakeholders to learn from one another, identify common goals, and work collectively toward solutions that address pressing social and development challenges.
+        </p>
+        <p className="text-xl mb-6 text-gray-700 leading-relaxed">
+          Our efforts focus on strengthening relationships both within Nepal and with the global philanthropic and development communities. 
+        </p>
       </main>
 
       {/* Partner Logos Section */}

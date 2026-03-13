@@ -35,9 +35,14 @@ export default function DialogueForPhilanthropyInfrastructurePage() {
 
       {/* Main Section */}
       <main className="container mx-auto px-6 md:px-20 py-12">
-        <h2 className="text-xl mb-6 text-gray-700 leading-relaxed">
-          We dialogue and advocate for an enabling environment; integrated societal norms, policies, and infrastructure that foster philanthropy in Nepal.
-        </h2>
+        <p className="text-xl mb-6 text-gray-700 leading-relaxed">
+          We facilitate dialogue and advocate for an enabling environment that nurtures and sustains philanthropy in Nepal. This includes promoting integrated societal norms, supportive policies, and effective institutional infrastructure that encourage individuals, businesses, and communities to give, collaborate, and contribute to the public good. By engaging with government institutions, civil society organizations, philanthropic actors, and the private sector, we work to ensure that philanthropy is recognized as an important pillar of national development.
+
+        </p>
+        <p className="text-xl mb-6 text-gray-700 leading-relaxed">
+           Through research, policy discussions, and multi-stakeholder engagement, we highlight the value of local giving traditions and modern philanthropic practices, and advocate for policies that make it easier, more transparent, and more impactful for people and organizations to contribute resources for social change. 
+
+        </p>
       </main>
 
       {/* Partner Logos Section */}

@@ -24,7 +24,7 @@ const sidebarArticles: SidebarArticle[] = [
     {
         id: 2,
         title: 'Philanthropy in Nepal',
-        imageUrl: '/carousel/what-is-philanthropy-bekay-ahn.jpg',
+        imageUrl: '/home/Philanthropy-in-nepal.jpg',
         link: '/philanthropy-in-nepal',
     },
     {

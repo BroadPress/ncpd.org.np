@@ -21,7 +21,7 @@ const newsData: NewsItem[] = [
   {
     title: "Philanthropy in Nepal",
     date: "23 May 2024",
-    image: "/carousel/what-is-philanthropy-bekay-ahn.jpg",
+    image: "/home/Philanthropy-in-nepal.jpg",
     link: "/philanthropy-in-nepal",
   },
   {

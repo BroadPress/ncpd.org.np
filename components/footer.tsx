@@ -107,13 +107,18 @@ export default function Footer() {
               </div>
             </div> */}
             <div className="md:col-span-1">
-              <h4 className='text-[2rem] font-bold text-gray-900 mb-4'>Get Involved</h4>
+              <h4 className='text-[2rem] font-bold text-gray-900 mb-4'>Quick Links</h4>
 
               <div className="space-y-2">
 
                 <div className="flex items-center space-x-1.5 hover:text-secondary group">
                   <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
-                  <a href="mailto:info@ncpd.org.np" className="text-[16px] relative group">
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@ncpd.org.np"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[16px] relative group"
+                  >
                     Become a Volunteer
                     <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
                   </a>
@@ -150,34 +155,61 @@ export default function Footer() {
                     <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
                   </Link>
                 </div>
+                <div className="flex items-center space-x-1.5 hover:text-secondary group">
+                  <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
+                  <Link href="/get-involved" className="text-[16px] relative group">
+                    Get Involved
+                    <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
+                  </Link>
+                </div>
 
               </div>
             </div>
 
             {/* Resources */}
             <div className="md:col-span-1">
-              <h4 className='text-[2rem] font-bold text-gray-900 mb-4'>Helpful Links</h4>
+              <h4 className="text-[2rem] font-bold text-gray-900 mb-4">Useful Links</h4>
+
               <div className="space-y-2">
+
                 <div className="flex items-center space-x-1.5 hover:text-secondary group">
                   <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
-                  <Link href="/trainings" className="text-[16px] relative group">
-                    Trainings
+                  <a href="http://www.swc.org.np/" target="_blank" rel="noopener noreferrer" className="text-[16px] relative group">
+                    Social Welfare Council
                     <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
-                  </Link>
+                  </a>
                 </div>
+
                 <div className="flex items-center space-x-1.5 hover:text-secondary group">
                   <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
-                  <Link href="/conferences" className="text-[16px] relative group">
-                    Conferences
+                  <a href="https://mowcsc.gov.np" target="_blank" rel="noopener noreferrer" className="text-[16px] relative group">
+                    Ministry of Women, Children and Senior Citizens
                     <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
-                  </Link>
+                  </a>
                 </div>
+
                 <div className="flex items-center space-x-1.5 hover:text-secondary group">
                   <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
-                  <Link href="/news" className="text-[16px] relative group">
-                    News
+                  <a href="https://www.immigration.gov.np/en/page/tourist-visa" target="_blank" rel="noopener noreferrer" className="text-[16px] relative group">
+                    Department of Immigration
                     <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
-                  </Link>
+                  </a>
+                </div>
+
+                <div className="flex items-center space-x-1.5 hover:text-secondary group">
+                  <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
+                  <a href="https://sriyog.com/consulting" target="_blank" rel="noopener noreferrer" className="text-[16px] relative group">
+                    SRIYOG Consulting
+                    <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
+                  </a>
+                </div>
+
+                <div className="flex items-center space-x-1.5 hover:text-secondary group">
+                  <FaArrowRight className="text-[12px] rotate-300 group-hover:translate-x-1 transition-transform duration-200" />
+                  <a href="https://www.ngofederation.org/" target="_blank" rel="noopener noreferrer" className="text-[16px] relative group">
+                    NGO Federation of Nepal
+                    <span className="absolute inset-x-0 bottom-0 h-[2px] bg-secondary scale-x-0 group-hover:scale-x-100 origin-center transition-all duration-300"></span>
+                  </a>
                 </div>
 
               </div>
@@ -189,7 +221,7 @@ export default function Footer() {
               <div className="space-y-2">
                 <div className="flex items-start space-x-1.5 hover:text-secondary">
                   <LocationEdit className='mt-1' />
-                  <span className="hover:text-secondary text-[16px]">Kathmandu, Nepal</span>
+                  <span className="hover:text-secondary text-[16px]">Kamalpokhari, Kathmandu, Nepal</span>
                 </div>
                 <div className="flex items-center space-x-1.5 hover:text-secondary">
                   <Phone />
@@ -208,6 +240,8 @@ export default function Footer() {
                   <a
                     href="mailto:info@ncpd.org.np"
                     className="hover:text-secondary text-[16px]"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     info@ncpd.org.np
                   </a>

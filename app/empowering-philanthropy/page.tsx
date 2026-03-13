@@ -35,10 +35,12 @@ export default function EmpoweringPhilanthropyPage() {
 
       {/* Main Section */}
       <main className="container mx-auto px-6 md:px-20 py-12">
-        <h2 className="text-xl mb-6 text-gray-700 leading-relaxed">
-          We build the capacity of philanthropy, private sectors, and individuals through training, conferences, seminars, workshops, 
-          coaching, mentoring, and networking. We primarily support building the talent, treasure, and trust of key actors working toward doing good in Nepal.
-        </h2>
+        <p className="text-xl mb-6 text-gray-700 leading-relaxed">
+          NCPD carries out regular and tailored capacity building program to build the capacity of philanthropy actors, the private sector, and development practitioners through a diverse range of learning and engagement platforms. These include trainings, conferences, seminars, workshops, coaching, mentoring, and networking opportunities designed to strengthen the philanthropic ecosystem in Nepal.
+
+        </p>
+        <p className="text-xl mb-6 text-gray-700 leading-relaxed">NCPD regularly organizes capacity-building trainings in key areas such as <b>Strategic Philanthropy and Social Investment, Fundraising and Resource Mobilization for Civil Society Organizations, Corporate Social Responsibility (CSR) and Private Sector Engagement, Philanthropy Research and Evidence-Based Giving, Impact Measurement and Social Return on Investment (SROI), Community Philanthropy and Local Giving, and Proposal Writing and Donor Engagement. </b> These trainings respond to the evolving needs of civil society organizations, philanthropic institutions, and private sector actors in Nepal.
+        </p>
       </main>
 
       {/* Partner Logos Section */}

@@ -92,7 +92,7 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Location</h4>
-                    <p className="text-gray-700">Kathmandu, Nepal</p>
+                    <p className="text-gray-700">NCPD Nepal rem.Work, Kamalpokhari, Kathmandu, Nepal </p>
                   </div>
                 </div>
 
@@ -118,7 +118,8 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
                     <p className="text-gray-700">
-                      <a href="mailto:info@ncpd.org.np">info@ncpd.org.np</a>
+                      <a href="mailto:info@ncpd.org.np">info@ncpd.org.np
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -128,23 +129,23 @@ const ContactPage: React.FC = () => {
 
           {/* Right Section: Larger Map */}
           <div className="bg-white p-6 rounded-3xl border border-blue-100 transition-all">
-  <div className="text-center mb-8">
-    <h1 className="text-3xl sm:text-4xl font-extrabold text-primary mb-2">Visit Us</h1>
-    <p className="text-gray-600 text-base sm:text-sm">
-      Our office is located in the Bhanimandal, Lalitpur, Nepal. We'd love to welcome you in person!
-    </p>
-  </div>
+            <div className="text-center mb-8">
+              <h1 className="text-3xl sm:text-4xl font-extrabold text-primary mb-2">Visit Us</h1>
+              <p className="text-gray-600 text-base sm:text-sm">
+                Our office is located in the Kamalpokhari, Kathmandu, Nepal. We'd love to welcome you in person!
+              </p>
+            </div>
 
-  <div className="h-full w-full rounded-4xl overflow-hidden">
-    <MapSection />
-  </div>
-</div>
+            <div className="h-full w-full rounded-4xl overflow-hidden">
+              <MapSection />
+            </div>
+          </div>
 
         </div>
       </main>
 
       {/* Logos */}
-        <LogoSection />
+      <LogoSection />
     </div>
   )
 }

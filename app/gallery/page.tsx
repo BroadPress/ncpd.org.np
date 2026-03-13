@@ -35,11 +35,11 @@ const galleryItems: GalleryItem[] = [
     title: "Keys to Fundraising Success and Capacity Building",
     imageSrc: "/gallery/keys.jpg",
     subImages: [
-      { id: "keys-1", src: "/gallery/keys/keys-presentation.jpg", alt: "Keys Presentation" },
-      { id: "keys-2", src: "/gallery/keys/keys-audience.jpg", alt: "Keys Audience" },
-      { id: "keys-3", src: "/gallery/keys/keys-networking.jpg", alt: "Keys Networking Session" },
-      { id: "keys-4", src: "/gallery/keys/keys-materials.jpg", alt: "Keys Training Materials" },
-      { id: "keys-5", src: "/gallery/keys/keys-group-work.jpg", alt: "Keys Group Work" }
+      { id: "keys-1", src: "/gallery/keys/keys-presentation.JPG", alt: "Keys Presentation" },
+      { id: "keys-2", src: "/gallery/keys/keys-audience.JPG", alt: "Keys Audience" },
+      { id: "keys-3", src: "/gallery/keys/keys-networking.JPG", alt: "Keys Networking Session" },
+      { id: "keys-4", src: "/gallery/keys/keys-materials.JPG", alt: "Keys Training Materials" },
+      { id: "keys-5", src: "/gallery/keys/keys-group-work.JPG", alt: "Keys Group Work" }
     ]
   },
   {

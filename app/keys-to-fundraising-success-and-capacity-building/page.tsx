@@ -76,7 +76,7 @@ const App: React.FC = () => {
             <img
               src="/training/key to fundraising.png"
               alt="Keys to Fundraising Success and Capacity Building"
-              className="absolute inset-0 w-full h-full object-center transition-transform duration-500 hover:scale-105"
+              className="absolute inset-0  object-center transition-transform duration-500 hover:scale-105"
             />
           </div>
         </section>
