@@ -95,7 +95,7 @@ Secure your place today.</p>
             </ul>
 
             <a
-              href="https://avpn.asia/conference/"
+              href="https://biratinfo.com/avpn-global-conference-2026/"
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-block px-8 py-3 rounded-xl text-base font-medium text-white bg-primary w-full sm:w-auto mx-auto group text-center"
