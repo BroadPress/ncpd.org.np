@@ -72,6 +72,19 @@ Her work focuses on transforming insight into action: facilitating learning syst
 
 She has supported interdisciplinary cross-sector initiatives across Sub-Saharan Africa, South Asia, and fragile and conflict-affected contexts for FCDO, EU, USAID and philanthropic partners, with a focus on gender equality, social norm change, and systems strengthening.`,
   },
+
+  {
+    name: "Sarah Nelems",
+    title: "Consultant",
+    image: "/team/sarah-nelems.png",
+    bio: `Sarah Nelems is a dynamic and seasoned non-profit leader with extensive experience in advancement, fundraising, strategic partnerships, and government relations across Canada and internationally. She has a strong track record of securing significant funding for international development, humanitarian relief, healthcare, and initiatives aligned with the United Nations Sustainable Development Goals (SDGs).
+
+Sarah currently works as a Consultant for global clients including Elections Canada, Amnesty International, St. Paul's Hospital Foundation, the US Treasury Board C-suite, and Thompson Rivers University (2022–Present). Previously, she served as Director of Strategic Partnerships & Engagement at the University of Ottawa's Faculty of Medicine – Global Health (2021–2022), National Director of Philanthropy & Engagement at World Vision Canada (2019–2021), and Interim CEO of Habitat for Humanity Okanagan (2017–2018).
+
+She completed the Women's Executive Leadership Program at the Haas School of Business, earned an M.A. in History (International Relations) from the London School of Economics and Political Science, and a B.A. (Honours) in English Literature from the University of British Columbia. Sarah also holds an ICD.D designation from the Institute of Corporate Directors and is a Certified Executive Leadership & Flourishing Life Coach Practitioner™.
+
+Her additional recognitions include leadership roles with the Clinton Global Initiative and the International Fundraising Congress, an adjunct professorship with UBC Okanagan, and the Rotary Paul Harris Fellowship for Outstanding Community Service.`,
+  },
 ];
 
   return (

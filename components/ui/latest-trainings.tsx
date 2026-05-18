@@ -9,7 +9,7 @@ export default function LatestTrainingPage() {
       {/* Header */}
       <div className="text-center mb-8">
         <h2 className="text-3xl lg:text-5xl font-extrabold text-black">
-          Past Training 
+          Training 
         </h2>
       </div>
 
