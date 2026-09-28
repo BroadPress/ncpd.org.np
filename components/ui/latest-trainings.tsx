@@ -29,7 +29,7 @@ export default function LatestTrainingPage() {
           <div className="lg:w-180 flex flex-col justify-center gap-4">
             <h1 className="text-3xl font-extrabold text-blue-800 mb-2">
               <span className="text-6xl font-extrabold text-blue-800">S</span>
-              tanding With Nepal After the Rasuwa Floods 26, August 2026
+              tanding With Nepal After the Rasuwa Floods 26 August, 2026
             </h1>
             
             <p className="text-gray-700 text-sm sm:text-base leading-relaxed line-clamp-3">
